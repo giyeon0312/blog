@@ -1,0 +1,10 @@
+<!--메소드를 사용하는 형식은-->
+<!--모델.쿼리셋(objects).메소드-->
+
+{%for blog in blogs.all%}
+<h1>{{ blog.title }}</h1>
+<p>{{ blog.pub_date }}</p>
+<p>{{ blog.body }}</p>
+<br /><br />
+
+{%endfor%}
